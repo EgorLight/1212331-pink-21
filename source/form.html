@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body class="page__body">
+    <h1 class="visually-hidden">Мобильное приложение "Pink"</h1>
+    <header class="page-header">
+      <div class="page-header__inner container">
+        <h2 class="visually-hidden">Навигация по сайту</h2>
+        <a class="page-header__logo logo" aria-label="На главную">
+          <img class="logo__image" src="" alt="Логотип Pink">
+        </a>
+        <nav class="main-navigation">
+          <button class="main-navigation__toggle" aria-label="Открыть меню" type="button"></button>
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item"><a href="main-navigation__link">Главная</a></li>
+            <li class="main-navigation__item"><a href="main-navigation__link">Фотографии</a></li>
+            <li class="main-navigation__item"><a href="main-navigation__link">Конкурс</a></li>
+            <li class="main-navigation__item"><a href="main-navigation__link">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="content-title">
+        <h2 class="content-title__title">Конкурс на самое безбашенное путишествие с Пинк</h2>
+      </section>
+      <form class="form" method="GET" action="https://echo.htmlacademy.ru">
+        <h2 class="visually-hidden">Форма заполнения для конкурса</h2>
+        <p class="form__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <fieldset class="text-field">
+          <legend class="visually-hidden">ФИО</legend>
+          <label class="text-field__label" for="surname">Фамилия:</label>
+          <input class="text-field__input" name="surname" id="surname" type="text">
+          <label class="text-field__label" for="name">Имя:</label>
+          <input class="text-field__input" name="name" id="name" type="text">
+          <label class="text-field__label" for="patronymic">Отчество:</label>
+          <input class="text-field__input" name="patronymic" id="patronymic" type="text">
+        </fieldset>
+        <fieldset class="select-field">
+          <legend class="visually-hidden">Достижения</legend>
+          <p class="select-field__description">Ваши безбашенные достижения в путешествии</p>
+          <label class="select-field__item">
+            <input name="selfieWithShark" type="checkbox">
+            Сделал селфи с акулой
+          </label>
+          <label class="select-field__item">
+            <input name="relaxOnBeach" type="checkbox">
+            Обгорел на пляже
+          </label>
+          <label class="select-field__item">
+            <input name="sawChuckNorris" type="checkbox">
+            Видел Чака Норриса
+          </label>
+          <label class="select-field__item">
+            <input name="boughtSouvenirs" type="checkbox">
+            Накупил сувениров
+          </label>
+          <label class="select-field__item">
+            <input name="saveTower" type="checkbox">
+            Удержал башню
+          </label>
+          <label class="select-field__item">
+            <input name="crashHotel" type="checkbox">
+            Разгромил отель
+          </label>
+        </fieldset>
+        <fieldset class="text-field">
+          <legend class="visually-hidden">Ваши контакты</legend>
+          <label class="text-field__label" for="phone">Номер телефона</label>
+          <input class="text-field__input" id="phone" type="number">
+          <label class="text-field__label" for="email">Адрес почты:</label>
+          <input class="text-field__input" id="email" type="email">
+        </fieldset>
+        <fieldset class="select-field">
+          <legend class="visually-hidden">Платформа</legend>
+          <p class="select-field__description">С каким приложением путешествовали?</p>
+          <label class="select-field__item">
+            <input name="device" type="radio" value="IOS">
+            Pink для iOS
+          </label>
+          <label class="select-field__item">
+            <input name="device" type="radio" value="Android">
+            Pink на Android
+          </label>
+          <label class="select-field__item">
+            <input name="device" type="radio" value="Windows Phone">
+            Windows Phone
+          </label>
+        </fieldset>
+        <fieldset class="message-field">
+          <legend class="visually-hidden">Ваше описание</legend>
+          <p class="message-field__description">Опишите свои эмоции</p>
+          <textarea class="message-field__input" name="message" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </fieldset>
+        <button class="form__submit" type="submit">Отправить форму</button>
+        <p class="form__necessarily"><span>*</span> — обязательные поля</p>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__inner">
+        <a class="page-footer__logo logo" href="">
+          <img class="logo__image" src="" alt="Логотип Pink">
+        </a>
+        <ul class="footer-list">
+          <li class="footer-list__item"><a class="footer-list__link" aria-label="Мы в Twitter" href=""></a></li>
+          <li class="footer-list__item"><a class="footer-list__link" aria-label="Мы в FaceBook" href=""></a></li>
+          <li class="footer-list__item"><a class="footer-list__link" aria-label="Мы на YouTube" href=""></a></li>
+        </ul>
+        <div class="authors">
+          <p class="authors__title">Разработано <span>HTML Academy</span></p>
+          <img class="authors__logo" src="" alt="Логотип HTML Academy">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
