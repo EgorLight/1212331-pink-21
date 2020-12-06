@@ -1,0 +1,31 @@
+.text-field {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-field__label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @company-color;
+}
+
+.text-field__input {
+  border: 2px solid @input-border;
+  padding: 23px 20px;
+  border-radius: 1px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: @gray;
+}
+
+.text-field__input::-moz-placeholder,
+.text-field__input::-webkit-input-placeholder {
+  opacity: 1;
+  color: @gray;
+}
