@@ -1,0 +1,50 @@
+.blog-post {
+  background-color: @light-background;
+}
+
+.blog-post__author {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: @gray;
+}
+
+.blog-post__time {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.blog-post__message {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: @gray;
+}
+
+.blog-post__likes {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  color: @company-color;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-left: 31px;
+  position: relative;
+  cursor: pointer;
+}
+
+.blog-post__likes::before {
+  content: "";
+  position: absolute;
+  left: -31px;
+  width: 13px;
+  height: 12px;
+  background-image: url("../../img/like.svg");
+}
