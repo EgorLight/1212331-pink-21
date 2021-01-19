@@ -2,12 +2,53 @@
   background-color: @gray;
 }
 
+.app__inner {
+  padding: 95px 0 40px 0;
+
+  @media (min-width: @tablet) {
+    padding-top: 210px;
+    padding-bottom: 120px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-top: 225px;
+    padding-bottom: 130px;
+  }
+}
+
 .app__title {
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
   color: @white;
+  text-align: center;
+  margin: 0 0 320px 0;
+
+  @media (min-width: @tablet) {
+    width: 300px;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop) {
+    font-size: 50px;
+  }
+}
+
+.app-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @tablet) {
+    width: 300px;
+  }
+}
+
+.app-list__item {
+  margin: 0 15px;
 }
 
 .app__download {
@@ -16,11 +57,19 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  padding: 10px 39px;
   color: @white;
-  border: @white solid 3px;
+  display: flex;
+  justify-content: center;
+  border: 3px solid @white;
+  border-radius: 100px;
+  padding: 20px;
   box-sizing: border-box;
-  border-radius: 29px;
+  margin-bottom: 30px;
+  text-align: center;
+
+  @media (min-width: @tablet) {
+    width: 300px;
+  }
 }
 
 .app__description {
@@ -29,4 +78,9 @@
   font-size: 14px;
   line-height: 24px;
   color: @white;
+  text-align: center;
+
+  @media (min-width: @tablet) {
+    width: 300px;
+  }
 }

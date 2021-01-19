@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -9,13 +10,15 @@
   <body class="page__body">
     <h1 class="visually-hidden">Мобильное приложение "Pink"</h1>
     <header class="page-header">
-      <div class="page-header__inner container">
+      <div class="container">
         <h2 class="visually-hidden">Навигация по сайту</h2>
-        <a class="page-header__logo" aria-label="На главную">
-          <img width="74" height="23" src="img/pink-logo.svg" alt="Логотип Pink">
-        </a>
         <nav class="main-navigation">
-          <button class="main-navigation__toggle" aria-label="Открыть меню" type="button"></button>
+          <div class="main-navigation__head">
+            <a class="main-navigation__logo" aria-label="На главную">
+              <img width="74" height="23" src="img/pink-logo.svg" alt="Логотип Pink">
+            </a>
+            <button class="main-navigation__toggle" aria-label="Открыть меню" type="button"></button>
+          </div>
           <ul class="main-navigation__list">
             <li class="main-navigation__item"><a class="main-navigation__link" href="">Главная</a></li>
             <li class="main-navigation__item"><a class="main-navigation__link" href="catalog.html">Фотографии</a></li>
@@ -27,24 +30,27 @@
     </header>
     <main class="main-content">
       <section class="app">
-        <div class="app__inner container">
+        <div class="container app__inner">
           <h2 class="app__title">Взгляните на жизнь иначе!</h2>
-          <div class="app__wrapper">
-            <a class="app__download" href="">Скачать приложение</a>
-            <ul class="app__list app-list">
-              <li class="app-list__item"><img class="app-list__img" width="47" height="56" src="img/apple-logo.svg" alt="Логотип Apple"></li>
-              <li class="app-list__item"><img class="app-list__img" width="43" height="47" src="img/android-logo.svg" alt="Логотип Android"></li>
-              <li class="app-list__item"><img class="app-list__img" width="44" height="41" src="img/microsoft-logo.svg" alt="Логотип Microsoft"></li>
-            </ul>
-            <p class="app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-          </div>
+          <a class="app__download" href="#">Скачать приложение</a>
+          <ul class="app__list app-list">
+            <li class="app-list__item"><img class="app-list__img" width="47" height="56" src="img/apple-logo.svg"
+                alt="Логотип Apple"></li>
+            <li class="app-list__item"><img class="app-list__img" width="43" height="47" src="img/android-logo.svg"
+                alt="Логотип Android"></li>
+            <li class="app-list__item"><img class="app-list__img" width="44" height="41" src="img/microsoft-logo.svg"
+                alt="Логотип Microsoft"></li>
+          </ul>
+          <p class="app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
       <section class="features">
+        <div class="features__slogan">
+          <p class="features__title">Устали от серости мегаполиса?</p>
+          <p class="features__subtitle">Нам есть, что вам<br> предложить!</p>
+        </div>
         <div class="features__inner container">
           <h2 class="visually-hidden">Наши приемущества</h2>
-          <p class="features__title">Устали от серости мегаполиса?</p>
-          <p class="features__subtitle">Нам есть, что вам предложить!</p>
           <ul class="features__list">
             <li class="features__item feature-item">
               <picture class="feature-item__img">
@@ -62,7 +68,7 @@
             </li>
             <li class="features__item feature-item">
               <picture class="feature-item__img">
-                <img src="img/screen-3.png" width="300" height="382" alt="Приложение Pink">
+                <img src="img/screen-mobile.png" width="157" height="320" alt="Приложение Pink">
               </picture>
               <h3 class="feature-item__title">Заводит новых друзей</h3>
               <p class="feature-item__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
@@ -72,10 +78,12 @@
       </section>
       <section class="fact">
         <div class="fact__inner container">
-          <img class="fact__image" width="298" height="345" src="img/timer.svg" alt="">
-          <h2 class="fact__title">Эффект на 24 часа!</h2>
-          <p class="fact__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a class="fact__link" href="">Узнать больше об исследовании</a>
+          <img class="fact__image" width="238" height="276" src="img/timer.svg" alt="">
+          <div class="fact__content">
+            <h2 class="fact__title">Эффект на 24 часа!</h2>
+            <p class="fact__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="fact__link" href="">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
       <section class="reviews">
@@ -87,23 +95,29 @@
               <p class="review-item__description">25 лет, водитель трамвая</p>
               <p class="review-item__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
-            <li class="reviews__list review-item">
+            <li class="reviews__item review-item">
               <h3 class="review-item__name">Николай Петров</h3>
               <p class="review-item__description">25 лет, водитель трамвая</p>
               <p class="review-item__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
-            <li class="reviews__list review-item">
+            <li class="reviews__item review-item">
               <h3 class="review-item__name">Николай Петров</h3>
               <p class="review-item__description">25 лет, водитель трамвая</p>
               <p class="review-item__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
+            <li class="reviews__controls">
+              <h2 class="visually-hidden">Навигация по отзывам</h2>
+              <ul class="slide-controls">
+                <li class="slide-controls__item"><button class="slide-controls__button--active" aria-label="Первый отзыв" type="button"></button></li>
+                <li class="slide-controls__item"><button class="slide-controls__button" aria-label="Второй отзыв" type="button"></button></li>
+                <li class="slide-controls__item"><button class="slide-controls__button" aria-label="Третий отзыв" type="button"></button></li>
+              </ul>
+            </li>
           </ul>
-          <h2 class="visually-hidden">Навигация по отзывам</h2>
-          <ul class="slide-controls">
-            <li class="slide-controls__item"><button class="slide-controls__button--active" aria-label="Первый отзыв" type="button"></button></li>
-            <li class="slide-controls__item"><button class="slide-controls__button" aria-label="Второй отзыв" type="button"></button></li>
-            <li class="slide-controls__item"><button class="slide-controls__button" aria-label="Третий отзыв" type="button"></button></li>
-          </ul>
+          <div class="reviews__desktop-controls">
+            <button class="reviews__next-button" aria-label="Предыдущий"></button>
+            <button class="reviews__prev-button" aria-label="Следующий"></button>
+          </div>
         </div>
       </section>
       <section class="price">
@@ -127,25 +141,25 @@
           </tr>
           <tr class="price-table__row">
             <td class="price-table__cell table-cell">Розовый фильтр</td>
-            <td class="price-table__cell table-cell">Розовый фильтр</td>
-            <td class="price-table__cell table-cell">Розовый фильтр</td>
-            <td class="price-table__cell table-cell">Розовый фильтр</td>
+            <td class="price-table__cell table-cell"><span class="table-cell__content">Розовый фильтр</span></td>
+            <td class="price-table__cell table-cell"><span class="table-cell__content">Розовый фильтр</span></td>
+            <td class="price-table__cell table-cell"><span class="table-cell__content">Розовый фильтр</span></td>
           </tr>
           <tr class="price-table__row table-row">
             <td class="price-table__cell table-cell">Смайлики</td>
-            <td class="price-table__cell table-cell">Смайлики</td>
-            <td class="price-table__cell table-cell">Смайлики</td>
-            <td class="price-table__cell table-cell">Смайлики</td>
+            <td class="price-table__cell table-cell"><span class="table-cell__content">Смайлики</span></td>
+            <td class="price-table__cell table-cell"><span class="table-cell__content">Смайлики</span></td>
+            <td class="price-table__cell table-cell"><span class="table-cell__content">Смайлики</span></td>
           </tr>
           <tr class="price-table__row table-row">
             <td class="price-table__cell table-cell">Комментарии</td>
-            <td class="price-table__cell table-cell">Комментарии</td>
-            <td class="price-table__cell table-cell">Комментарии</td>
-            <td class="price-table__cell table-cell">Комментарии</td>
+            <td class="price-table__cell table-cell"><span class="table-cell__content">Комментарии</span></td>
+            <td class="price-table__cell table-cell"><span class="table-cell__content">Комментарии</span></td>
+            <td class="price-table__cell table-cell"><span class="table-cell__content">Комментарии</span></td>
           </tr>
         </table>
-        <h2 class="visually-hidden">Навигация по таблице</h2>
-        <ul class="slide-controls">
+        <ul class="slide-controls price__controls">
+          <h2 class="visually-hidden">Навигация по таблице</h2>
           <li class="slide-controls__item"><button class="slide-controls__button--active" aria-label="Первый столбик" type="button"></button></li>
           <li class="slide-controls__item"><button class="slide-controls__button" aria-label="Второй столбик" type="button"></button></li>
           <li class="slide-controls__item"><button class="slide-controls__button" aria-label="Третий столбик" type="button"></button></li>
@@ -153,28 +167,29 @@
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
-        <ul class="contacts__list">
-          <li class="contacts__item contacts-item">
-            <h3 class="contacts-item__title">Звоните:</h3>
-            <a class="contacts-item__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
-          </li>
-          <li class="contacts__item contacts-item">
-            <h3 class="contacts-item__title">Пишите:</h3>
-            <a class="contacts-item__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-          <li class="contacts__item contacts-item">
-            <h3 class="contacts-item__title">Приезжайте в гости:</h3>
-            <address class="contacts-item__info">ул. Большая Конюшенная, 19/8</address>
-          </li>
-        </ul>
+        <div c  lass="contacts__inner container">
+          <p class="contacts__title">Остались вопросы?<br> Свяжитесь с нами!</p>
+          <ul class="contacts__list">
+            <li class="contacts__item contacts-item">
+              <h3 class="contacts-item__title">Звоните:</h3>
+              <a class="contacts-item__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </li>
+            <li class="contacts__item contacts-item">
+              <h3 class="contacts-item__title">Пишите:</h3>
+              <a class="contacts-item__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+            <li class="contacts__item contacts-item">
+              <h3 class="contacts-item__title">Приезжайте в гости:</h3>
+              <address class="contacts-item__info">ул. Большая Конюшенная, 19/8</address>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="map">
-        <!-- map -->
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__inner">
+      <div class="page-footer__inner container">
         <a class="page-footer__logo" href="">
           <img src="img/pink-logo-large.svg" width="145" height="40" alt="Логотип Pink">
         </a>

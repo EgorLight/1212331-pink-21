@@ -2,15 +2,24 @@
   .list-reset();
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.slide-controls__item {
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slide-controls__button {
   width: 6px;
   height: 6px;
   padding: 0;
-  border: none;
+  border: 3px solid @white;
   border-radius: 50%;
   background-color: @gray;
+  box-sizing: content-box;
   opacity: 0.3;
 }
 

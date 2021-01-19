@@ -1,6 +1,27 @@
 .fact {
   display: none;
-  background-color: @light-background;
+  padding-top: 55px;
+
+  @media (min-width: @tablet) {
+    display: block;
+    background-color: @white;
+  }
+
+  @media (min-width: @desktop) {
+    background-color: @light-background;
+  }
+}
+
+.fact__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fact__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 70px;
 }
 
 .fact__title {
@@ -8,6 +29,8 @@
   font-weight: bold;
   font-size: 30px;
   line-height: 30px;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .fact__description {
@@ -16,6 +39,8 @@
   font-size: 18px;
   line-height: 30px;
   color: @gray;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .fact__link {
