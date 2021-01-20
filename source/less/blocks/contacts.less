@@ -5,11 +5,46 @@
 .contacts__title {
   font-style: normal;
   font-weight: 300;
-  font-size: 40px;
-  line-height: 54px;
+  font-size: 24px;
+  line-height: 120%;
   color: @gray;
+  text-align: center;
+
+  @media (min-width: @tablet) {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: @desktop) {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .contacts__list {
   .list-reset();
+  display: grid;
+  grid-template-columns: auto;
+
+  @media (min-width: @tablet) {
+    grid-template-columns: 1fr 1fr;
+
+    .contacts__item:last-child {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .contacts__item:last-child {
+      grid-column-start: auto;
+      grid-column-end: auto;
+    }
+  }
 }

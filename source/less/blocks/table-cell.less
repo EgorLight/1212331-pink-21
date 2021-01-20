@@ -6,4 +6,16 @@
   text-transform: uppercase;
   padding: 20px 25px;
   background-color: @white;
+  width: 155px;
+
+  @media (min-width: @tablet) {
+    text-transform: none;
+    padding: 18px 15px;
+  }
+}
+
+.table-cell__content {
+  @media (min-width: @tablet) {
+    display: none;
+  }
 }
